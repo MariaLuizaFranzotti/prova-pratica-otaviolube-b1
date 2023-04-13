@@ -3,27 +3,36 @@ body {
     margin: 0px;
 }
 
-table {
+.list{
     font-size: 20px;
-    text-align: center;
-    width: 100%;
+    padding-bottom: 15px;
+    padding-top: 10px;
     background-color: #313a51;
     color: rgba(238, 241, 245, 0.861);
-    padding-left: 2%;
-    padding-right: 2%;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin: 0px;   
+
 }
 
 
-td {
+li:not(:last-child) {
     border-right: 2px solid #307aab;
-    padding: 5px;
-    padding-top: 2%;
-    padding-bottom: 2%;
-   
+       
+}
+
+
+li{
+    padding: 0 0.5rem;
+    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
     
 }
-
 .container {
     display: flex;
     flex-wrap: wrap;
@@ -79,12 +88,8 @@ h1 {
 }
 
 
-.border {
-    border-left: 2px solid #307aab;
-}
-
-td:hover {
-    background-color: #161e54;
+li:hover {
+    color: #939cda;
 }
 
 figure{
